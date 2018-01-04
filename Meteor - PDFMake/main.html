@@ -1,0 +1,38 @@
+<head>
+  <title>pdftest</title>
+</head>
+
+<body>
+  <h1>Author a report</h1>
+
+  {{> authorreport}}
+</body>
+
+<template name="authorreport">
+	<form class = "form-report">
+		Report Title<br>
+        <input type="text" name="reporttitle">
+		<br>
+		Reason for consultation<br>
+        <textarea type="textarea" name="reasonconsultation" class = "textareareport" rows ="3" cols="50"></textarea>
+		<br>
+		Medical History<br>
+		<textarea type="textarea" name="medhistory" class = "textareareport" rows ="3" cols="50"></textarea>
+		<br>
+		Laboratory Data<br>
+		<textarea type="textarea" name="labdata" class = "textareareport" rows ="3" cols="50"></textarea>
+		<br>
+		Findings<br>
+		<textarea type="textarea" name="findings" class = "textareareport" rows ="3" cols="50"></textarea>
+		<br>
+		Analysis<br>
+		<textarea type="textarea" name="analysis" class = "textareareport" rows ="3" cols="50"></textarea>
+		<br>
+		Impression<br>
+		<textarea type="textarea" name="impression" class = "textareareport" rows ="3" cols="50"></textarea>
+		<br>
+		<br>
+		<input type = "submit" class="createrep" value="Create Report">
+    </form>
+</template>
+
